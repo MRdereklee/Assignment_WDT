@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register -- Food.Inc</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Online Food Ordering System" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS --->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login_form.css">
+
+  <style>
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+    color: white;
+  }
+
+  form {
+    width: 350px;
+    height: 450px;
+  }
+
+  form .form__header {
+    background-color: #1999BF;
+  }
+
+  form .form__header .triangle {
+    border-top: 8px solid #1999BF;
+  }
+
+  form .form__body {
+    box-shadow: 13px 13px #1999BF;
+  }
+
+  form .form__body button {
+    background-color: #1180A0;
+  }
+
+  form .form__body button:hover {
+    background-color: #0B5F78;
+  }
+  </style>
+
+</head>
+<header id="header">
+  <div class="container">
+
+    <div class="logo float-left">
+      <h1 class="text-light"><a href="home.php" class="scrollto"><span>Food.Inc</span></a></h1>
+    </div>
+
+  </div>
+</header><!-- #header -->
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <form action="php/register.php" method="post">
+    <div class="form__header">
+      <h1 class="form__header">Register</h1>
+
+      <div class="triangle"></div>
+    </div>
+
+    <div class="form__body">
+      <p class="title">
+      </p>
+      <input type="text" placeholder="Username" name="u_name" required>
+      <input type="email" placeholder="Email" name="u_email" required>
+      <input type="Phone" placeholder="Phone Number" name="u_pnumber" required>
+      <input type="password" placeholder="Password" name="u_password" required>
+      <input type="password" placeholder="Confirm Password" name="u_cpassword" required>
+      <button>Register</button>
+    </div>
+  </form>
+
+  <div class="login">
+    <p>Already have an account?
+      <a href="login.html">Login Now!</a>
+    </p>
+  </div>
+
+
+</div>
+<!-- partial -->
+<div id="preloader"></div>
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/mobile-nav/mobile-nav.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

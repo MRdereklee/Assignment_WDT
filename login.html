@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login -- Food.Inc</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Online Food Ordering System" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS --->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login_form.css">
+
+  <style>
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+    color: white;
+  }
+
+  form .form__body button:hover {
+    background-color: #0D7662;
+  }
+
+  </style>
+
+</head>
+<header id="header">
+  <div class="container">
+
+    <div class="logo float-left">
+      <h1 class="text-light"><a href="home.php" class="scrollto"><span>Food.Inc</span></a></h1>
+    </div>
+
+  </div>
+</header><!-- #header -->
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <form action="php/login.php" method="post">
+    <div class="form__header">
+      <h1 class="form__header">Login</h1>
+
+      <div class="triangle"></div>
+    </div>
+
+    <div class="form__body">
+      <p class="title">
+      </p>
+      <input type="text" placeholder="Username" name="login_name" required>
+      <input type="password" placeholder="Your Password" name="login_password" required>
+      <button>Login</button>
+      <button type="button" onclick="document.getElementById('fp-modal-wrapper').style.display='block'">
+      Forgot Password</button>
+    </div>
+  </form>
+  <div class="login">
+    <p>Don't have an account?
+      <a href="register.html">Register Now!</a><br/>
+    </p>
+  </div>
+</div>
+
+<div id="fp-modal-wrapper" class="fp-modal">
+
+  <form class="fp-modal-content animate" action="php/forgotpswrd.php" method="post">
+
+    <div class="form__header">
+      <h1 class="form__header">Forgot Password?</h1>
+      <span onclick="document.getElementById('fp-modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <div class="triangle"></div>
+    </div>
+    <br/>
+    <div class="fp-container">
+
+      <input type="text" placeholder="Enter Your Username" name="fp_username" class="fp_input" required>
+      <input type="email" placeholder="Enter Your Email" name="fp_email" class="fp_input" required>
+      <input type="password" placeholder="Enter Your New Password" name="fp_pw" class="fp_input" required>
+      <input type="password" placeholder="ReEnter Your Password" name="fp_cpw" class="fp_input" required>
+      <button class="fp_button">Change Password</button>
+    </div>
+
+  </form>
+
+</div>
+<script>
+
+  // If user clicks anywhere outside of the modal, Modal will close
+  var modal = document.getElementById('fp-modal-wrapper');
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+<!-- partial -->
+  <div id="preloader"></div>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
